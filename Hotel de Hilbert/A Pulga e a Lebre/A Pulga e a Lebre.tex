@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{pgfplots} % For making the axes
+\usepackage{geometry} % For plotting functions
+
+\title{A Pulga e a Lebre}
+\author{Francisco Dall' Oglio Scorsato}
+\date{12 de Maio 2024}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+
+\maketitle
+
+\section{Questão}
+O rabo de uma lebre gigante esá presa por um elástico de borracha gigante em uma estaca no chão. A pulga está sentada no topo da estaca de olho na lebre. Ao ver a pulga, a lebre salta ao ar e pousa a um quilômetro de distância da estaca (com seu rabo ainda preso na estaca pelo elástico de borracha). A pulga não desiste de perseguir a lebre e também salta ao ar e pousa no elástico de borracha a um centímetro da estaca. A lebre gigante, após ver isso, pula de novo ao ar e pousa a outro quilômetro de distância da estaca (para um total de 2 quilômetros de distância). A pulga destemida salta de novo ao ar, pousando no elástico de borracha um centímetro mais longe. Mais uma vez, a lebre pula outro quilômetro. E a pulga novamente pula outro centímetro. Se isso continuar indefinidamente, irá a pulga capturar a lebre eventualmente? (Assuma que a terra é plana e continua indefinidamente para todas as direções.)
+
+\section{Problema simplificado}
+
+    Antes de resolver o problema, vamos resolver um parecido mas ligeiramente mais simples.\\
+    Cada vez que a pulga dá um salto, ela percorre mais um centímetro no elástico. E cada vez que a lebre salta, ela percorre \(2cm\) e estica o elástico.\\
+    Após o primeiro pulo da lebre, o elástico fica com \(2cm\). Então, a pulga percorre \(50\%\) de todo o elástico.\\
+    Quando a lebre salta pela segunda vez, a pulga continuará tendo percorrido esse \(50\%\) do elástico, pois tal esticou com a pulga nele. Mas agora pulará mais \(1cm\). O elástico tem \(4cm\), e já que a pulga está na metade do elástico, então, após saltar e aterrissar, ela estará a \(2cm+1cm\) da estaca, e terá andado \(75\%\) do caminho.\\
+    Após mais um pulo da lebre, que deixa o elástico com \(6cm\), a pulga, que está agora a \(4,5cm\) da estaca, pulará e estará a \(5,5cm\) da estaca, que é aproximadamente \(91\%\) do elástico. Um salto depois, e o elástico terá \(8cm\) e a pulga, que estava a aproximadamente \(7,3cm\) da estaca, pula mais um centímetro e alcança o final do elástico.\\
+    Isso mostra que, embora a lebre salte mais longe por pulo do que a pulga, pelo fato de ela estar em uma superfície elástica, ela consegue fazer progresso aos poucos, e alcançar a lebre. Isso pode ser indicação de que, mesmo a lebre percorrendo \(1km\) por salto, é possível que a pulga a alcance.
+
+\section{Solução}
+
+O primeiro pulo da pulga cobrirá \(1cm\) de \(1km\), que é \(100000cm\). Isso quer dizer que cobrirá \(0,00001\) do caminho total, ou \(0,001\%\).
+Após o segundo pulo, cobrirá mais \(1cm\) de \(200000cm\), que é \(0,0005\%\) do elástico. O terceiro pulo será de \(1cm\) de \(300000cm\), ou \(\frac{1}{300000}\). Perceba que a porcentagem total andada será a porcentagem de cada salto somado. E perceba também que, no salto \(n\), a porcentagem saltada é de \(\frac{1}{100000n}\). Logo, a porcentagem salta após o pulo \(k\) será:
+\[\frac{1}{100000}+\frac{1}{200000}+\frac{1}{300000}+\frac{1}{400000}+\frac{1}{500000}\dots+\frac{1}{100000k}\]
+\[=\frac{1}{100000}\cdot (\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}\dots+\frac{1}{k})\]
+A pulga só chegará ao final do elástico caso essa soma seja maior que ou igual a \(100\%\), que é, claro, \(1\). Portanto, temos que achar um valor \(k\) tal que, se somarmos \(k\) termos, teremos um valor maior que ou igual a \(1\).
+Podemos representar a soma com notação sigma da seguinte maneira: (não se preocupe com o que isso quer dizer, só saiba que é uma forma mais compacta de escrever somas com muitos termos)
+\[\frac{1}{100000}\cdot\sum_{1}^{k}\frac{1}{n}\]
+Acontece que esse somatório é exatamente a série harmônica, conhecida por, embora lentamente, crescer indefinidamente. Isso quer dizer que, dado um valor \(k\) grande o suficiente, a soma sempre poderá atingir qualquer número. Para que a soma seja maior que ou igual a \(1\), basta que o segundo termo do produto acima, aquele com o \(\Sigma\), seja maior que ou igual a \(100000\). Sabemos que isso é possível, e, portanto, a pulga pode, eventualmente, chegar à lebre.
+A série harmônica tem outra propriedade muito legal: ela aproxima a função do logaritmo natural. Portanto, podemos saber que o valor de \(k\) é próximo de \(e^{100000}\).
+
+
+\end{document}
