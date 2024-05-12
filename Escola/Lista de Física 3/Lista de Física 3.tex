@@ -1,0 +1,178 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{pgfplots}
+\usepackage{geometry}
+
+\title{Lista 3 - Cinemática}
+\author{Francisco Dall' Oglio Scorsato}
+\date{Abril 2024}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+
+\maketitle
+
+\section{Ao avistar um pedestre, o motorista reduz a velocidade de \(72km/h\) para \(36km/h\) em 4 horas. Qual foi a aceleração, supondo que ela seja constante?}
+
+    \[a=\frac{\Delta v}{\Delta t}\]
+    \[\Delta v=36-72=-36km/h\]
+    \[\Delta t=4h\]
+    \[a=\frac{-36}{4}=-9km/h^2\] 
+
+\section{É dado um movimento cuja função horária é \(x=-40-2t+2t^2\).}
+
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines = middle,
+            xlabel = \(t (s)\),
+            ylabel = \(x (m)\)
+            ]
+            \addplot [
+                domain=0:8,
+                samples=100,
+                color=blue,
+                ]
+                {-40 - 2*x + 2*x^2};
+            \addlegendentry{\(x =-40-2t+2t^2\)}
+    
+      \end{axis}
+    \end{tikzpicture}
+
+    \subsection{a)}
+        \hspace{\parindent}Ao comparar a função horária da questão com a forma geral de funções horárias, podemos fazer observações.
+    
+        \[x=x_0+v_0t+\frac{a}{2}t^2\]
+        \[x=-40-2t+2t^2\]
+        \[x_0=-40m\]
+        \[v_0=-2m/s\]
+        \[a=4m/s^2\]
+    
+    \subsection{b)}
+        \hspace{\parindent}A função de velocidade escalar é a derivada da função de posição.
+        \[v = \frac{d}{dt}[-40-2t+2t^2]=-2+4t\]
+    
+    \subsection{c)}
+        \hspace{\parindent}O instante em que o corpo muda de sentido é quando a velocidade deixa de ser positiva e fica negativa ou vice-versa. Para descobrir isso, basta encontrar o ponto em que \(v=0\) e ver se esse é um ponto onde o sinal muda.
+        \[v=-2+4t\]
+        \[0=-2+4t\]
+        \[t=\frac{1}{2}\]
+        \par É trivial ver que, quando \(t<\frac{1}{2}\), \(v<0\) e que, quando \(t>\frac{1}{2}\), \(v>0\). Portanto, o instante em pauta é um válido candidato. \(t = 0,5s\).
+
+\section{Um ponto parte do repouso com aceleração constante e após 10 segundos, encontra-se a \(40m\) da posição inicial.}
+
+    \subsection{a)}
+        \[a=\frac{\Delta v}{\Delta t}\]
+        \[\Delta v=v-v_0=v \textrm{ (já que \(v_0=0\))}\] 
+        \[\Delta t = 10\]
+        \[\Delta x = 40\]
+        \[v=\frac{\Delta x}{\Delta t}=\frac{40}{10}=4\]
+        \[a=\frac{4}{10}=0,4m/s^2\]
+    
+    \subsection{b)}
+        \[v=v_0+at\]
+        \[v=0+0,4\cdot 10\]
+        \[v=4m/s\]
+
+\section{Um motorista atento aciona o freio à velocidade de 14,0m/s. O desatento, sob mesmas circunstâncias, aciona o freio um segundo depois. Que distância ele percorre a mais?} 
+
+    \hspace{\parindent}A velocidade pós-freio do motorista atento é dada pela expressão:
+    \[v=v_0+at=14-5t\]
+    \par Ele irá parar quando sua velocidade for igual à zero. Isso é:
+    \[14-5t=0 \rightarrow t=\frac{14}{5}\]
+    \par Sua distância percorrida, sendo \(x_0\) sua posição inicial, é dada pela expressão:
+    \[x=x_0+v_0t+\frac{a}{2}t^2=x_0+14t-\frac{5}{2}t^2\]
+    \par A distância percorrida até o veículo parar é aquela quando \(t=\frac{14}{5}\).
+    \[x=x_0+14\cdot\frac{14}{5}-\frac{5}{2}\cdot(\frac{14}{5})^2\]
+    \[x=x_0+\frac{98}{5}\]
+    \par Podemos fazer um procedimento parecido para descobrir a distância andada pelo motorista desatento.
+    \[v=v_0+at=15-5t\]
+    \[15-5t=0 \rightarrow t=3\]
+    \[x=x_0+v_0t+\frac{a}{2}t^2=x_0+15t-\frac{5}{2}t^2\]
+    \[x=x_0+15\cdot3-\frac{5}{2}\cdot3^2\]
+    \[x=x_0+\frac{45}{2}\]
+    \par Para descobrir quanto a mais o motorista desatento andou, basta subtrair de seu deslocamento, o deslocamento do motorista atento. Isso é:
+    \[(x_0+\frac{45}{2})-(x_0+\frac{98}{5})=\frac{29}{10}=2,9m\]
+
+\section{Qual é a velocidade inicial de um trem com desaceleração de \(0,06m/s^2\) que desacelera completamente depois de 30km?}
+    \[v^2=v_0^2+2a\Delta x\]
+    \[0=v_0^2+2\cdot (-0,06)\cdot 30000\]
+    \[v_0=60\]
+    \par Logo, a velocidade com que o trem começa a desacelerar é de \(60m/s\), ou \(216km/h\).
+
+\section{Qual é o gráfico certo?}
+    \hspace{\parindent}O gráfico de posição com uma aceleração constante diferente de zero será uma parábola, com concavidade dependendente do sinal da aceleração. O gráfico de posição de uma velocidade constante será uma linha reta com inclinação diferente de zero. Com isso em mente, é possível descobrir qual gráfico descreve os movimentos da locomotiva.
+    \par O primeiro terço do gráfico deve ter a forma de uma parábola côncava para cima. O segundo terço deve ser uma linha reta. E o terceiro deve ser parte de uma parábola côncava para baixo.
+    \par A única opção que obedece todos os requisitos é a opção C.
+
+\section{Dois automóveis, A e B, andam em uma estrada retilínea.}
+    \hspace{\parindent}A velocidade de A é constante por todo o gráfico, e é igual à inclinação da reta. Isso é, \(v_A=\frac{\Delta x}{\Delta t}=10m/s\).
+    \par Já a velocidade de B é variada. Descobrir esse valor em \(t=5s\) é o mesmo que descobrir a derivada de B em \(t=5s\).
+    \[x(t)=x_0+v_0t+\frac{a}{2}t^2\]
+    \[x(t)=0+0+\frac{a}{2}t^2\]
+    \[x(5)=50=\frac{a}{2}5^2\]
+    \[a=4\]
+    \[x'(t)=at=4t\]
+    \[x'(5)=20m/s\]
+    \[v_B=20m/s\]
+    \[\frac{v_A}{v_B}=\frac{10m/s}{20m/s}\]
+    \[\frac{v_A}{v_B}=\frac{1}{2}\]
+
+\section{Considere o gráfico e avalie as afirmações, justificando as respostas.}
+    \subsection{Nos intervalos de tempo de 2,0s a 4,0s e de 6,0s a 8,0s o corpo permanece em repouso.}
+        \hspace{\parindent} Isso é falso. O gráfico representa a velocidade em função do tempo. Isso quer dizer que, durante os intervalos citados, a velocidade era constante e era diferente de zero, o que quer dizer que o corpo não estava em repouso.
+    \subsection{De 0 até 8,0s só há um trecho de movimento uniformemente acelerado.}
+        \hspace{\parindent} Isso é verdade. Esse trecho é aquele de 0s a 2,0s. O corpo acelera de maneira uniforme.
+    \subsection{De 0 até 8,0s só há um trecho de movimento uniformemente retardado.}
+        \hspace{\parindent} Isso é verdade. Esse trecho é aquele de 4,0s a 6,0s.
+    \subsection{O afastamento máximo da origem do referencial é maior do que 40m.}
+        \hspace{\parindent} Isso é falso. Para descobrir isso, basta observar qual é o momento em que o corpo percorreu a maior quantidade de espaço. Já que o gráfico é um de velocidade, o deslocamento é dado pela área abaixo da curva. O maior valor andado é de \(\int_0^5v(t)dt=35m\), o que é menor que 40m.
+    \subsection{O corpo passa somente uma vez pela posição 30m.}
+        \hspace{\parindent} Isso é falso. \(\int_0^4v(t)dt=30m\) e \(\int_0^6v(t)dt=30m\).
+
+\section{O gráfico indica como varia o espaço de um móvel em função do tempo. Qual é a aceleração?}
+    \[x(t)=x_0+v_0t+\frac{a}{2}t^2\]
+    \[x(t)=3+v_0t+\frac{a}{2}t^2\]
+    \[x(2)=3+2v_0+2a=-1\]
+    \[v_0+a=-2\]
+    \[x(4)=3+4v_0+8a=3\]
+    \[v_0+2a=0\]
+    $$ \left\{
+        \begin{array}{lr}
+            v_0+a=-2\\
+            v_0+2a = 0
+        \end{array}
+    \right. $$
+    \[a=2m/s^2\]
+
+\section{Quanto ao movimento de um corpo lançado verticalmente para cima e submetido somente à ação da gravidade, é correto afirmar que:}
+    \subsection{A velocidade do corpo no ponto de altura máxima é zero instantaneamente.}
+    \hspace{\parindent}Isso é verdade. Esse é o ponto instantâneo no qual o corpo não está subindo nem caindo.
+    \subsection{A velocidade do corpo é constante para todo o percurso.}
+    \hspace{\parindent}Isso é falso. A gravidade está mudando a velocidade do corpo a todo momento.
+    \subsection{O tempo necessário para a subida é igual ao tempo de descida, sempre que o corpo é lançado de um ponto e retorna ao mesmo ponto.}
+    \hspace{\parindent}Isso é verdade. As parábolas se comportam de tal forma a fazer isso ser verdadeiro.
+    \subsection{A aceleração do corpo é maior na descida do que na subida.}
+    \hspace{\parindent}Isso é falso. A gravidade é sempre constante em todos os momentos, seja na descida ou na subida.
+    \subsection{Para um dado ponto na trajetória, a velocidade tem os mesmos valores, em módulo, na subida e na descida.}
+    \hspace{\parindent}Isso é verdade. Uma demonstração disso seria mostrar que o valor da derivada do movimento de um corpo em determinado ponto será oposto ao valor em um ponto simétrico em relação ao ponto em que a derivada é zero.
+
+\section{Um menino lança uma bola verticalmente para cima do nível da rua. Outra pessoa apanha a bola a 10m de distância, quando ela está a caminho do chão. Qual era a velocidade da bola quando ela foi apanhada?}
+    \[x_0=0\]
+    \[v_0=15\]
+    \[a=-10m/s\]
+    \[x=15t-5t^2\]
+    \[10=15t-5t^2\]
+    \[t^2-3t+2=0\]
+    \[(t-1)(t-2)=0\]
+    \[t\in\{1,2\}\]
+    \par Escolhemos t=2 pois a bola estava caindo quando foi apanhada, portanto, deve ser o tempo posterior.
+    \[v=v_0+at\]
+    \[v=15-10t\]
+    \[v=15-10\cdot 2\]
+    \[v=-5m/s\]
+    
+\end{document}
+
+
+
+na linha 88, analisar a folha de exercícios e explicar pq v_0 = 15 e não 14. Se não me engano é pq a aceleração era de 1m/s^2 e ele freiou um segundo depois. Mas aí tem que explicar ali.

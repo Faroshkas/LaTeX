@@ -1,0 +1,162 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{pgfplots}
+\usepackage{geometry}
+
+\title{Lista 2 - Cinemática}
+\author{Francisco Dall' Oglio Scorsato}
+\date{Abril 2024}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+
+\setlength{\parindent}{20pt}
+\maketitle
+
+
+
+\section{Que tamanho deve ter um corpo para ser considerado um ponto material? Justifique.}
+\hspace{\parindent}Um ponto material é todo corpo que irá modificar de maneira negligenciável o resultado do fenômeno em observação. Exemplo: \par
+Ao observar um ecossistema, uma única formiga não fará grandes diferenças ao analisar o comportamento de leões. Na física, algo como um asteroide no sistema solar não irá modificar a atração gravitacional entre a Terra e o Sol.
+\par Logo, não há um único tamanho específico para um corpo ser considerado um ponto material. Tudo depende do sistema observado e do efeito que o corpo tem nele.  
+
+\section{Um carro percorre uma pista circular com raio de \(80m\). Determine o deslocamento e o espaço percorrido.}
+
+\[\textrm{Deslocamento} = x - x_0\]
+\[\textrm{Circunferência} = 2\times\pi\times r\]
+\[= 2\times3\times80=480m\]
+\[\textrm{Meio  Perímetro} =\frac{480}{2} = 240m\]
+
+\subsection{a) }
+\hspace{\parindent}O deslocamento total será a posição inicial subtraída da final. Ao dar uma volta completa em um círculo, o carro chegará de volta a onde começou. Portanto, o deslocamento total será \(x - x_0 = 0m\), visto que \(x=x_0\).
+\par Já o espaço percorrido será toda a trajetória do automóvel. Foi dada uma volta completa pelo círculo, então esse espaço será igual à circunferência do círculo, ergo, \(480m\).
+
+\subsection{b)} 
+\hspace{\parindent}Ao dar meia volta em um círculo, o carro irá estar no exato lado oposto àquele que começou. Logo, sua distância de seu ponto de partida será o diâmetro do círculo, que, nesse caso, é \(2\times80=160m\). Esse é o deslocamento.
+\par Já o espaço percorrido ao dar meia volta em um círculo será de meio perímetro. Isso é, \(240m\).
+
+
+\section{Se a velocidade da luz no vácuo é \(300.000\frac{km}{s}\), qual é o valor de 1 ano-luz em quilômetros?}
+\hspace{\parindent}1 ano-luz é o espaço que a luz percorre em um ano. Portanto, ao expressar a velocidade da luz em quilômetros por ano, é possível extrair tal distância.
+
+\[\frac{300.000km}{s}=\frac{x}{ano}\]
+\[ano=365\times dia\]
+\[dia = 24\times h\]
+\[h=60\times min\]
+\[min = 60\times s\]
+\[ano=365\times 24\times 60\times 60\times s\]
+\[ano = 31.536.000s\]
+
+\[\frac{300.000km}{s}=\frac{x}{31.536.000s}\]
+\[x = 300.000\cdot 31.536.000\cdot km\]
+\[x=9,4608\cdot 10^{12} km ft\]
+
+\section{Um ônibus percorre \(180km\) entre 10:30h e 13:00h. Qual é a velocidade média do automóvel?}
+
+\hspace{\parindent}O ônibus andou por 2:30h. Sua velocidade média é sua distância total percorrida dividida pelo tempo.
+\[\frac{180km}{2,5h}=\frac{72km}{h}\]
+\par Para transformar \(km/h\) em \(m/s\):
+\[\frac{x\cdot km}{h} = \frac{x\cdot 1000m}{3600s} = \frac{\frac{x}{3,6}m}{s}\]
+\hspace{\parindent}Logo:
+\[\frac{72km}{h}=\frac{\frac{72}{3,6}m}{s}=\frac{20m}{s}\]
+
+\section{Os dois automóveis realizam movimentos retilíneos constantes. Qual é a velocidade de B?}
+
+\hspace{\parindent}Sabe-se que o veículo \(A\) levará o mesmo tempo para percorrer \(100m\) que o veículo \(B\) levará para percorrer \(60m\), afinal, os dois automóveis irão se encontrar, no mesmo instante, no mesmo ponto. \(A\), que anda \(10m\) a cada segundo, demorará \(10s\) para completar os \(100m\). Portanto, o carro \(B\) tem velocidade de: \[\frac{60m}{10s} = \frac{6m}{s}\] 
+\section{Um corpo se move obedecendo a função horária \(x = 60 - 10t\).}
+
+\begin{tikzpicture}
+\begin{axis}[
+axis lines = middle,
+xlabel = \(t (s)\),
+ylabel = {\hspace{\parindent}\(x (m)\)}
+]
+\addplot [
+domain=0:8,
+samples=100,
+color=blue,
+]
+{60-10*x};
+\addlegendentry{\(x = 60-10t\)}
+
+\end{axis}
+\end{tikzpicture}
+
+\subsection{a)}
+\subsubsection{Posição inicial}
+\hspace{\parindent}A posição inicial do corpo é aquela quando \(t=0\). Substituindo na função:
+\[60-10\cdot 0 = 60m\]
+\par Isso está de acordo com a forma padrão da função, onde o termo constante indica a posição inicial.
+\subsubsection{Velocidade}
+\par Sua velocidade, por ser constante, será a mesma em todos os pontos. A forma padrão da função horária de posição retilínea uniforme nos diz que o coeficiente de \(t\) é a velocidade. Logo, a velocidade é \(10m/s\) no sentido negativo. Também é possível extrair esse fato da definição de velocidade:
+\[\frac{\Delta x}{\Delta t}=-\frac{60m}{6s}=-\frac{10m}{s}\]
+
+\subsection{b)}
+\hspace{\parindent}Sua posição no instante 3s é aquela quando \(t=3\). Perceba:
+\[60-10\cdot3=30m\]
+
+\subsection{c)}
+\hspace{\parindent}O instante em que passa pela origem das posições é quando seu deslocamento \(x\) é \(0\). Para descobrir isso, basta resolver a equação:
+\[60-10t=0\rightarrow10t=60\rightarrow t=6s\]
+
+\subsection{d)}
+\hspace{\parindent}A distância percorrida em um intervalo de tempo por um corpo em velocidade constante é o intervalo de tempo multiplicado pela velocidade. Pode-se extrair esse fato da definição de velocidade:
+\[v=\frac{\Delta x}{\Delta t}\]
+\[\Delta x = v\cdot \Delta t\]
+\par Nesse caso, de \(1s\) a \(10s\), o tempo decorrido é de \(9s\) e a velocidade é de \(-10m/s\). 
+\par Então, a distância percorrida será de \(-90m\), ou \(90m\) no sentido negativo.
+
+
+\section{A figura representa a posição de um corpo em função do tempo.}
+\begin{tikzpicture}
+\begin{axis}[
+axis lines = middle,
+xlabel = \(t (s)\),
+ylabel = {\(x (m)\)},
+xtick={0,25,50},
+ytick={-50,-25,0,25,50},
+]
+\addplot [
+domain=0:40,
+samples=100,
+color=blue,
+]
+{-50+2*x};
+
+\end{axis}
+\end{tikzpicture}
+
+\subsection{a)}
+\hspace{\parindent}Quando \(t=0\), o valor da função é de \(-50m\). Portanto, se \(x=m+bt\), \(m=-50\).
+\par Quando \(t=25\), o valor da função é de \(0m\). Logo, \(-50+b\cdot(25)=0\).
+\par Dessa equação, temos que \(b=2\) e a função horária é \(x=-50+2t\).
+
+\subsection{b)}
+\hspace{\parindent}O corpo passa pela posição \(80m\) quando \(x=80\).
+\[x=-50+2t=80\]
+\[2t=130\]
+\[t=65s\]
+
+\section{Um automóvel faz uma viagem com velocidade variada. Calcule a velocidade escalar média do veículo.}
+\hspace{\parindent}A velocidade média de um veículo será toda a distância percorrida dividida por todo o tempo passado.
+\[V_m = \frac{\Delta x}{\Delta t}\]
+\par A distância pode ser adquirida calculando a área abaixo da curva do gráfico. Isso é:
+\[\int_0^4{f(t)}dt=2\cdot80 + 0,5\cdot0+1,5\cdot40=220km\]
+\par O tempo é dado, e é igual a 4 horas.
+\par A velocidade média então é:
+\[\frac{220km}{4h}=\frac{55km}{h}\]
+\section{Qual é o tempo, em milissegundos, que o aparelho calcula ao medir um carro com velocidade de \(60km/h\)?}
+\hspace{\parindent}O momento em que o tempo começa a ser medido é quando o veículo passa pelo sensor 1. Chame esse momento de \(t_0\). O relógio para de rodar quando o automóvel atravessa o sensor 2. Chame esse momento de \(t\). É possível montar as equações:
+\[\Delta t=t-t_0\]
+\[\Delta x = 0,5m\]
+\[v=\frac{\Delta x}{\Delta t}=\frac{0,5m}{t-t_0}=\frac{60km}{h}\]
+\[=\frac{60.000m}{3600000ms}= \frac{6m}{360ms} = \frac{1m}{60ms}\]
+
+\par Se a cada \(60ms\), o carro percorre \(1m\), a cada \(30ms\), o carro percorrerá metade disso, vulgo \(0,5m\). Logo, o automóvel levará \(30ms\) para ir do sensor 1 ao sensor 2, e esse será o tempo medido pelo aparelho. Isso também pode ser mostrado algebricamente resolvendo a equação \(\frac{0,5}{\Delta t}=\frac{1}{60}\), que daria o mesmo resultado de \(30ms\).
+\end{document}
+Mudar:
+Adicionar algo como "Logo, não há tamanho que defina um corpo material" na n. 1
+Na n. 4, há um km no lugar de m
+Adicionar a interpretação da n. 9
+Melhorar algumas escritas, evitando repetições (portanto).
+Botar aquele espaço antes do parágrafo (tab).

@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{pgfplots} % For making the axes
+\usepackage{geometry} % For plotting functions
+
+\title{Hotel de Hilbert - Decomposição de uma fração como a soma de duas frações.}
+\author{Francisco Dall' Oglio Scorsato}
+\date{11 de Maio 2024}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+
+
+
+\maketitle
+
+\section{Questão}
+
+Uma fração unitária é uma fração da forma \(\frac{1}{n}\) onde \(n\) é um inteiro positivo. Note que a fração unitária \(\frac{1}{11}\) pode ser escrita como a soma de duas frações unitárias das três maneiras:
+    \[\frac{1}{11}=\frac{1}{12}+\frac{1}{132}=\frac{1}{22}+\frac{1}{22}=\frac{1}{132}+\frac{1}{12}.\]
+Há outras maneiras de decompor \(\frac{1}{11}\) como a soma de duas frações unitárias? De quantas maneiras pode se escrever \(\frac{1}{60}\) como a soma de duas frações unitárias? De maneira geral, de quantas maneiras a fração unitária \(\frac{1}{n}\) pode ser escrita como a soma de duas frações unitárias? Em outras palavras, quantos pares ordenados \((a,b)\) de inteiros positivos \(a, b\) existem de tal forma que
+    \[\frac{1}{n}=\frac{1}{a}+\frac{1}{b}?\]
+
+\section{Solução}
+Seja \(\frac{1}{n}=\frac{1}{a}+\frac{1}{b}\). Disso temos:
+\[\frac{1}{n}-\frac{1}{a}=\frac{1}{b}\rightarrow \frac{a-n}{an}=\frac{1}{b}\].
+Para que \(\frac{a-n}{an}\) seja uma fração unitária, é necessário que \(a-n = 1\) ou que \(an\) seja divisível por \(a-n\). O motivo pelo segundo caso ser verdade é que, para transformar \(\frac{a-n}{an}\) em uma fração unitária, temos que dividir o numerador por \(a-n\) e, por consequência, o denominador também. Logo, o denominador deve ser divisível.
+Vamos analisar o primeiro caso:
+
+\subsection{\(a-n = 1\)}
+Se \(a-n = 1\), segue que \(a=n+1\). Também segue que, já que a fração já é unitária, então seu denominador é \(b\). Portanto:
+\[\frac{1}{n}=\frac{1}{a}+\frac{1}{b}=\frac{1}{n+1}+\frac{1}{(n+1)\cdot n}.\]
+Esse é nosso primeiro par \((a,b)\): \(a = n+1\) e \(b = n(n+1)\). Se \((a,b)\) é um par, então \((b,a)\) também é. Portanto, descobrimos outro par, \((n(n+1),n+1)\). 
+
+\subsection{\(an\) é divisível por \(a-n\)}
+Sabemos dois fatores de \(an\): \(a\) e \(n\). Portanto, \(an\div (a-n)=a\) ou \(an\div (a-n)=n\).
+No primeiro caso, temos que:
+\[an\div (a-n)=a\rightarrow n\div (a-n) = 1\rightarrow n = (a-n)\rightarrow a=2n\]
+Se \(a=2n\), então \(\frac{1}{n}=\frac{1}{2n}+\frac{1}{b}\rightarrow b=2n\)
+Logo, outro par é \((2n,2n)\).
+
+No segundo caso, temos que:
+\[an\div (a-n)=n\rightarrow a\div (a-n) = 1\rightarrow a = (a-n)\rightarrow n=0\]
+Já que \(\frac{1}{n}\) com \(n=0\) é indefinido, então esse caso não tem solução.
+
+\section{Conclusão}
+Os três possíveis pares \((a,b)\) são:
+\((n+1),n(n+1)\), \((n(n+1),(n+1))\) e \((2n,2n)\). Pode se aplicar isso para \(n=11\) e \(n=60\) para responder as outras perguntas da questão.
+Como um pequeno bônus, há uma quantidade infinita de formas de representar uma fração unitária como a soma de \(k\) frações unitárias. Basta somar \(\frac{1}{kn}\) consigo mesmo \(k\) vezes.
+
+\end{document}
