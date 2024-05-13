@@ -1,7 +1,7 @@
-PWD c:\Users\scors\OneDrive\Desktop\LaTeX\Hotel de Hilbert\Decomposição de Fração
+PWD c:\Users\scors\OneDrive\Desktop\LaTeX\PIC\Tarefa 1\Questão 01
 INPUT C:\Users\scors\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\scors\OneDrive\Desktop\LaTeX\Hotel de Hilbert\Decomposição de Fração\HH - Decomposição de Fração.tex
-OUTPUT HH - Decomposição de Fração.log
+INPUT c:\Users\scors\OneDrive\Desktop\LaTeX\PIC\Tarefa 1\Questão 01\Questão 01.tex
+OUTPUT Questão 01.log
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
@@ -194,10 +194,10 @@ INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.c
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\HH - Decomposição de Fração.aux
-INPUT .\HH - Decomposição de Fração.aux
-INPUT HH - Decomposição de Fração.aux
-OUTPUT HH - Decomposição de Fração.aux
+INPUT .\Questão 01.aux
+INPUT .\Questão 01.aux
+INPUT Questão 01.aux
+OUTPUT Questão 01.aux
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -219,17 +219,15 @@ INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-OUTPUT HH - Decomposição de Fração.pdf
+OUTPUT Questão 01.pdf
 INPUT C:\Users\scors\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT HH - Decomposição de Fração.aux
+INPUT Questão 01.aux
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
@@ -238,7 +236,7 @@ INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
-INPUT C:\Users\scors\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb

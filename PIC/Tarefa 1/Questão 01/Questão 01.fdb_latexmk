@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1715537512.51873 "c:/Users/scors/OneDrive/Desktop/LaTeX/Hotel de Hilbert/Decomposição de Fração/HH - Decomposição de Fração.tex" "HH - Decomposição de Fração.pdf" "HH - Decomposição de Fração" 1715537514.51305 0
+["pdflatex"] 1715512505.2431 "c:/Users/scors/OneDrive/Desktop/LaTeX/PIC/Tarefa 1/Questão 01/Questão 01.tex" "Questão 01.pdf" "Questão 01" 1715512506.46646 0
   "C:/Users/scors/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1715487629 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/scors/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1715478047 24240395 5f7f493cdac69949adc22056328e5ef2 ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -16,13 +16,12 @@
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
-  "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
+  "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty" 1643997108 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -147,11 +146,11 @@
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1673775190 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/tex/latex/pgfplots/pgfplots.sty" 1621075461 4904 ee78b44e85d6fccf08cd99370557481e ""
   "C:/Users/scors/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "HH - Decomposição de Fração.aux" 1715537514 552 12340a718da07eb261fb7adc54a0d7ad "pdflatex"
-  "HH - Decomposição de Fração.tex" 1715481338 3216 d657506a4eb4d3e664812c7573a26b2a ""
-  "c:/Users/scors/OneDrive/Desktop/LaTeX/Hotel de Hilbert/Decomposição de Fração/HH - Decomposição de Fração.tex" 1715481338 3216 d657506a4eb4d3e664812c7573a26b2a ""
+  "Questão 01.aux" 1715512506 668 ed40cd241c5ee5ab82a8907c8fb69f10 "pdflatex"
+  "Questão 01.tex" 1715512467 688 5a51a38b97d3e1ed5d761ff5f3d1ba71 ""
+  "c:/Users/scors/OneDrive/Desktop/LaTeX/PIC/Tarefa 1/Questão 01/Questão 01.tex" 1715512467 688 5a51a38b97d3e1ed5d761ff5f3d1ba71 ""
   (generated)
-  "HH - Decomposição de Fração.aux"
-  "HH - Decomposição de Fração.log"
-  "HH - Decomposição de Fração.pdf"
+  "Questão 01.aux"
+  "Questão 01.log"
+  "Questão 01.pdf"
   (rewritten before read)
