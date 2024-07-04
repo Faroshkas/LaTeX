@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.11)  12 MAY 2024 00:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.11)  4 JUL 2024 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/scors/OneDrive/Desktop/LaTeX/Escola/Lista de Física 3/Lista de Física 3.tex"
-(c:/Users/scors/OneDrive/Desktop/LaTeX/Escola/Lista de Física 3/Lista de Física 3.tex
+**"c:/Users/scors/OneDrive/Documents/LaTeX/Escola/Lista de Física 3/Lista de Física 3.tex"
+(c:/Users/scors/OneDrive/Documents/LaTeX/Escola/Lista de Física 3/Lista de Física 3.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (C:\Users\scors\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -388,21 +388,21 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {C:/Users/scors/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-Overfull \hbox (8.11658pt too wide) in paragraph at lines 76--76
+Overfull \hbox (8.11658pt too wide) in paragraph at lines 75--75
 []\OT1/cmr/bx/n/14.4 Um mo-torista atento aciona o freio ^^Ra ve-loci-dade de 14,0m/s.
  []
 
-
-Overfull \hbox (5.57439pt too wide) in paragraph at lines 96--96
+[3]
+Overfull \hbox (5.57439pt too wide) in paragraph at lines 102--102
 \OT1/cmr/bx/n/14.4 de $\OT1/cmr/m/n/14.4 0\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 06\OML/cmm/m/it/14.4 m=s[]$ \OT1/cmr/bx/n/14.4 que de-sacel-era com-ple-ta-mente de-pois de 30km? 
  []
 
-[3] [4]
-Overfull \hbox (1.12813pt too wide) in paragraph at lines 147--147
+[4] [5]
+Overfull \hbox (1.12813pt too wide) in paragraph at lines 153--153
 []\OT1/cmr/bx/n/14.4 Quanto ao movi-mento de um corpo lan^^Xcado ver-ti-cal-mente
  []
 
-[5] [6] [7] (Lista de Física 3.aux)
+[6] [7] (Lista de Física 3.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
@@ -410,14 +410,14 @@ L3 programming layer <2024-04-11>
  ) 
 Here is how much of TeX's memory you used:
  22777 strings out of 474369
- 612117 string characters out of 5740514
+ 612131 string characters out of 5740514
  1936754 words of memory out of 5000000
  44856 multiletter control sequences out of 15000+600000
  562631 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,107p,801b,2137s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,107p,803b,2137s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/scors/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "Lista de Física 3.pdf" (7 pages, 149580 bytes).
+Output written on "Lista de Física 3.pdf" (7 pages, 151026 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

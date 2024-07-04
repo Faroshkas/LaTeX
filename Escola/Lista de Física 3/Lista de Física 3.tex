@@ -12,12 +12,13 @@
 
 \maketitle
 
-\section{Ao avistar um pedestre, o motorista reduz a velocidade de \(72km/h\) para \(36km/h\) em 4 horas. Qual foi a aceleração, supondo que ela seja constante?}
+\section{Ao avistar um pedestre, o motorista reduz a velocidade de \(72km/h\) para \(36km/h\) em 4 segundos. Qual foi a aceleração, supondo que ela seja constante?}
 
     \[a=\frac{\Delta v}{\Delta t}\]
     \[\Delta v=36-72=-36km/h\]
-    \[\Delta t=4h\]
-    \[a=\frac{-36}{4}=-9km/h^2\] 
+    \[\Delta t=4s\]
+    \[a=\frac{-36km/h}{4s}=-\frac{9000m/3600s}{s}\]
+    \[a=-\frac{5}{2}m/s^2\] 
 
 \section{É dado um movimento cuja função horária é \(x=-40-2t+2t^2\).}
 
@@ -39,7 +40,7 @@
     \end{tikzpicture}
 
     \subsection{a)}
-        \hspace{\parindent}Ao comparar a função horária da questão com a forma geral de funções horárias, podemos fazer observações.
+        \hspace{\parindent}Ao comparar a função horária da questão com a forma geral de funções horárias, podemos fazer as seguintes observações:
     
         \[x=x_0+v_0t+\frac{a}{2}t^2\]
         \[x=-40-2t+2t^2\]
@@ -61,21 +62,21 @@
 \section{Um ponto parte do repouso com aceleração constante e após 10 segundos, encontra-se a \(40m\) da posição inicial.}
 
     \subsection{a)}
-        \[a=\frac{\Delta v}{\Delta t}\]
-        \[\Delta v=v-v_0=v \textrm{ (já que \(v_0=0\))}\] 
-        \[\Delta t = 10\]
-        \[\Delta x = 40\]
-        \[v=\frac{\Delta x}{\Delta t}=\frac{40}{10}=4\]
-        \[a=\frac{4}{10}=0,4m/s^2\]
+    \par Sabemos que \(v_0 = 0\) e \(x_0 = 0\). Com isso, temos:
+        \[x(t)=\frac{a}{2}t^2 + v_0t + x_0=\frac{a}{2}t^2\]
+        \[x(10)=40=\frac{a}{2}\cdot 100\]
+        \[a=\frac{4}{5}=0,8m/s^2\]
     
     \subsection{b)}
-        \[v=v_0+at\]
-        \[v=0+0,4\cdot 10\]
-        \[v=4m/s\]
+        \[v(x)=at + v_0\]
+        \[v(10)=0,8\cdot 10 + 0\]
+        \[v=8m/s\]
 
 \section{Um motorista atento aciona o freio à velocidade de 14,0m/s. O desatento, sob mesmas circunstâncias, aciona o freio um segundo depois. Que distância ele percorre a mais?} 
 
-    \hspace{\parindent}A velocidade pós-freio do motorista atento é dada pela expressão:
+    \hspace{\parindent}A distância a mais que o desatento anda é igual a soma da distância que ele anda durante o segundo que ele levou para freiar e a distância que ele percorre freiando, subtraído da distância que o motorista atento percorre após freiar.
+
+    \par A velocidade pós-freio do motorista atento é dada pela expressão:
     \[v=v_0+at=14-5t\]
     \par Ele irá parar quando sua velocidade for igual à zero. Isso é:
     \[14-5t=0 \rightarrow t=\frac{14}{5}\]
@@ -83,15 +84,20 @@
     \[x=x_0+v_0t+\frac{a}{2}t^2=x_0+14t-\frac{5}{2}t^2\]
     \par A distância percorrida até o veículo parar é aquela quando \(t=\frac{14}{5}\).
     \[x=x_0+14\cdot\frac{14}{5}-\frac{5}{2}\cdot(\frac{14}{5})^2\]
-    \[x=x_0+\frac{98}{5}\]
-    \par Podemos fazer um procedimento parecido para descobrir a distância andada pelo motorista desatento.
+    \[x=x_0+\frac{98}{5}=\frac{98}{5}=19,6m \textrm{   (Para os propósitos da questão, \(x_0 = 0\).)}\]
+    \par A distância que o desatento percorreu antes de freirar é dado pela função de posição, com velocidade inicial de \(14m/s\):
+    \[x = x_0 + v_0t +\frac{a}{2}t^2 = 0 + 14t + \frac{1}{2}t^2\]
+    \par Após um segundo, que é quando ele começa a freiar, terá andado:
+    \[x = x_0 + 14\cdot 1 + \frac{1}{2} \cdot 1^2 = 14,5m\]
+    \par Podemos fazer um procedimento parecido ao que fizemos com o motorista atento para determinar a distância que o desatento percorreu após freiar. Sua velocidade no momento de freio é \(15m/s\), já que a aceleração é \(1m/s^2\).
     \[v=v_0+at=15-5t\]
     \[15-5t=0 \rightarrow t=3\]
     \[x=x_0+v_0t+\frac{a}{2}t^2=x_0+15t-\frac{5}{2}t^2\]
     \[x=x_0+15\cdot3-\frac{5}{2}\cdot3^2\]
-    \[x=x_0+\frac{45}{2}\]
+    \[x=x_0+\frac{45}{2}=\frac{45}{2}=22,5m\]
+    \par A distância total andada por ele será então \(14,5m + 22,5m = 37m\). 
     \par Para descobrir quanto a mais o motorista desatento andou, basta subtrair de seu deslocamento, o deslocamento do motorista atento. Isso é:
-    \[(x_0+\frac{45}{2})-(x_0+\frac{98}{5})=\frac{29}{10}=2,9m\]
+    \[37m - 19,6m = 17,4m\]
 
 \section{Qual é a velocidade inicial de um trem com desaceleração de \(0,06m/s^2\) que desacelera completamente depois de 30km?}
     \[v^2=v_0^2+2a\Delta x\]
@@ -110,7 +116,7 @@
     \[x(t)=x_0+v_0t+\frac{a}{2}t^2\]
     \[x(t)=0+0+\frac{a}{2}t^2\]
     \[x(5)=50=\frac{a}{2}5^2\]
-    \[a=4\]
+    \[a=4m/s^2\]
     \[x'(t)=at=4t\]
     \[x'(5)=20m/s\]
     \[v_B=20m/s\]
@@ -154,7 +160,7 @@
     \subsection{A aceleração do corpo é maior na descida do que na subida.}
     \hspace{\parindent}Isso é falso. A gravidade é sempre constante em todos os momentos, seja na descida ou na subida.
     \subsection{Para um dado ponto na trajetória, a velocidade tem os mesmos valores, em módulo, na subida e na descida.}
-    \hspace{\parindent}Isso é verdade. Uma demonstração disso seria mostrar que o valor da derivada do movimento de um corpo em determinado ponto será oposto ao valor em um ponto simétrico em relação ao ponto em que a derivada é zero.
+    \hspace{\parindent}Isso é verdade. Uma demonstração disso seria mostrar que uma parábola é simétrica em relação ao vértice.
 
 \section{Um menino lança uma bola verticalmente para cima do nível da rua. Outra pessoa apanha a bola a 10m de distância, quando ela está a caminho do chão. Qual era a velocidade da bola quando ela foi apanhada?}
     \[x_0=0\]

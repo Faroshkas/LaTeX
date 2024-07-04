@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{pgfplots} % For making the axes
+\usepackage{geometry} % For plotting functions
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\declaretheoremstyle[name=Theorem]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=Proposition,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\title{Questão 10, Aula 2, Encontro 2, Ciclo 2}
+\author{Francisco Dall' Oglio Scorsato}
+\date{29 de maio de 2024}
+\pgfplotsset{compat=1.18}
+
+\begin{document}
+
+\maketitle
+
+\section{Resolução por sistema de equações}
+Suponha que a expressão que representa a quantidade de palitos até determinado andar \(x\) é uma função quadrática. Isso é confirmado após se usar mais termos para os polinômios (os de mais alto grau cancelam).
+Portanto, temos que \[y=c+bx+ax^2\] Sabemos também, por contagem, que os pontos \((1, 5), (2,14), (3, 27)\) estão no gráfico. Com isso, podemos montar o sistema de equações (o qual resolverei por eliminação de Gauss):
+\[\begin{bmatrix}
+    1 & 1 & 1\\
+    1 & 2 & 4\\
+    1 & 3 & 9
+\end{bmatrix}
+\begin{bmatrix}
+    c\\
+    b\\
+    a
+\end{bmatrix}
+=
+\begin{bmatrix}
+    5\\
+    14\\
+    27
+\end{bmatrix}\]
+\[\begin{bmatrix}
+    1 & 1 & 1\\
+    0 & 1 & 3\\
+    0 & 0 & 2
+\end{bmatrix}
+\begin{bmatrix}
+    c\\
+    b\\
+    a
+\end{bmatrix}
+=
+\begin{bmatrix}
+    5\\
+    9\\
+    4
+\end{bmatrix}\]    
+\[\begin{bmatrix}
+    c\\
+    b\\
+    a
+\end{bmatrix}
+=
+\begin{bmatrix}
+    0\\
+    3\\
+    2
+\end{bmatrix}\]
+Assim, temos a função:
+\[y=2x^2+3x\]
+Igualando isso a 2024, temos que \(31<x<32\). Podemos raciocinar que isso quer dizer que \(x\) está na trigésima segunda escada.
+
+\section{Resolução por sequência}
+\[S={5,14,27,44,\dots}\]
+The first time, it increases by 9. The second, by 13. Then, by 17. The amount it grows by grows by 4.
+\[a_1 = 5\]
+\[a_n = 1+4n+a_{n-1}\]
+
+\end{document}
